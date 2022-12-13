@@ -1,8 +1,9 @@
 package com.example.house_cleaning_service_company.score.domain;
 
-import com.example.house_cleaning_service_company.Base.domain.BaseDomain;
-import jakarta.persistence.*;
+
 import lombok.*;
+
+import jakarta.persistence.*;
 
 @Builder
 @AllArgsConstructor
@@ -16,8 +17,8 @@ public class Score {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "fk_worker")
-    private Long workerId;
+    @Column(name = "fk_order")
+    private Long orderId;
 
     @Column(name = "fk_employer")
     private Long employerId;

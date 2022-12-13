@@ -8,6 +8,8 @@ import lombok.Setter;
 @Getter
 public class EmployerModel  {
 
+    private Long id;
+
     private String firstName;
 
     private String lastName;

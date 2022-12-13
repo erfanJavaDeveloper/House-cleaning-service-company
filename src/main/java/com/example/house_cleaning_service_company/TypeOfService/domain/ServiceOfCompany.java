@@ -1,15 +1,19 @@
 package com.example.house_cleaning_service_company.TypeOfService.domain;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Builder
+
+//@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Setter
 @Getter
-public class TypeOfService {
+public class ServiceOfCompany {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -14,7 +14,7 @@ public class Wallet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String amount;
+    private Long amount;
 
     @Column(name = "fk_employer")
     private Long employerId;

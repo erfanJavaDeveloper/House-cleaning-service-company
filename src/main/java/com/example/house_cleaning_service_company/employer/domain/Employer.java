@@ -1,11 +1,9 @@
 package com.example.house_cleaning_service_company.employer.domain;
 
-import com.example.house_cleaning_service_company.Base.domain.BaseDomain;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
+import jakarta.persistence.*;
 import lombok.*;
+
 
 @Builder
 @AllArgsConstructor
@@ -14,6 +12,9 @@ import lombok.*;
 @Setter
 @Getter
 public class Employer {
+
+//    private Long id;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

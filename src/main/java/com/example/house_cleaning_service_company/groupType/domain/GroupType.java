@@ -1,10 +1,9 @@
-package com.example.house_cleaning_service_company.group.domain;
+package com.example.house_cleaning_service_company.groupType.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
+
 import lombok.*;
+import jakarta.persistence.*;
 
 @Builder
 @AllArgsConstructor

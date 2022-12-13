@@ -1,9 +1,6 @@
 package com.example.house_cleaning_service_company.worker.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Builder
@@ -29,5 +26,8 @@ public class Worker {
     private String password;
 
     private String username;
+
+    @Enumerated(EnumType.STRING)
+    private IsActive isActive;
 
 }
