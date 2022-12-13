@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd"
+                 version="2.0">
+
+    <named-query name="OrderType.findWalletByOrderId">
+        <query>select w.id ,w.fk_employer ,w.amount
+            from order_type o
+            INNER join employer e on o.fk_employer = e.id
+            INNER join wallet w on e.id = w.fk_employer
+            where o.id = :orderId
+        </query>
+    </named-query>
+
+    <named-query name="OrderType.update">
+        <query>update OrderType set dateDelivery=:dateDelivery ,timeDelivery=:timeDelivery , dateOfOrder=:dateOfOrder ,
+            timeOfOrder=:timeOfOrder , employerId=:employerId , sumOfAmount=:sumOfAmount ,
+            typeOfServiceId=:typeOfServiceId where id=:id
+        </query>
+    </named-query>
+
+
+</entity-mappings>

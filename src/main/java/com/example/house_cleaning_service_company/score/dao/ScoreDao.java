@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 public interface ScoreDao extends JpaRepository<Score, Long> {
 
     @Modifying
-    @Query(value = "update Score set employerId=:employerId  ,orderId=:orderId , workerScore=:workerScore   where id=:id")
+    @Query
     void update(Long employerId,Long orderId,Integer workerScore ,Long id);
 
 }

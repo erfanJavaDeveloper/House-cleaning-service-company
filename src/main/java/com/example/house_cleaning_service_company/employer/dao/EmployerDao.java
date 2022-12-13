@@ -9,11 +9,26 @@ public interface EmployerDao extends JpaRepository<Employer, Long> {
 
     //    @Query(value = "update employer em set em.first_name=:firstName  ,em.last_name=:lastName ,em.number=:number ,em.password=:password ,em.username=:username  where em .id  =:id ", nativeQuery = true)
 //    @Query(value = "update Employer set firstName=?1  ,lastName=?2  ,number=?3  ,password=?4  ,username=?5  where id=?6 ")
+
+
+
+
+//    @Query(value = "update Employer  set firstName=:firstName  ,lastName=:lastName  ,number=:number  ,password=:password  ,username=:username  where id=:id " )
     @Modifying
-    @Query(value = "update Employer  set firstName=:firstName  ,lastName=:lastName  ,number=:number  ,password=:password  ,username=:username  where id=:id " )
+    @Query
     void update(String firstName, String lastName, String number, String password, String username, Long id);
+
+
+
+
+
+
 //    void update(@Param("firstName") String firstName ,@Param("lastName")  String lastName ,@Param("number")  String number ,@Param("password")  String password ,@Param("username")  String username ,@Param("id")  Long id );
 
 
+
+
+//    @Query
+//    List<Role> findByCond(String rid, String rname);
 }
 

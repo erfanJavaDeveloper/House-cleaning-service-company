@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 public interface GroupDao extends JpaRepository<GroupType,Long> {
 
     @Modifying
-    @Query(value = "update GroupType  set code=:code  ,title=:title  where id=:id " )
+    @Query
     void update(Long code, String title, Long id);
 }
