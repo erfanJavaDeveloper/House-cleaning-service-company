@@ -1,14 +1,15 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
 
     <persistence-unit name="myUnit" transaction-type="RESOURCE_LOCAL">
-        <mapping-file>META-INF/employer.xml</mapping-file>
-        <mapping-file>META-INF/groupType.xml</mapping-file>
-        <mapping-file>META-INF/orderType.xml</mapping-file>
-        <mapping-file>META-INF/score.xml</mapping-file>
-        <mapping-file>META-INF/typeOfService.xml</mapping-file>
-        <mapping-file>META-INF/wallet.xml</mapping-file>
-        <mapping-file>META-INF/worker.xml</mapping-file>
-        <mapping-file>META-INF/worker2order.xml</mapping-file>
+        <mapping-file>META-INF/Employer.xml</mapping-file>
+        <mapping-file>META-INF/GroupType.xml</mapping-file>
+        <mapping-file>META-INF/OrderType.xml</mapping-file>
+        <mapping-file>META-INF/Score.xml</mapping-file>
+        <mapping-file>META-INF/ServiceOfCompany_Dao.xml</mapping-file>
+        <mapping-file>META-INF/Wallet.xml</mapping-file>
+        <mapping-file>META-INF/Worker.xml</mapping-file>
+        <mapping-file>META-INF/Worker2Order.xml</mapping-file>
+
         <exclude-unlisted-classes/>
     </persistence-unit>
 
