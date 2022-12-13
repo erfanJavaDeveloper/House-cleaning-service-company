@@ -10,6 +10,8 @@
         </query>
     </named-query>
 
+
+
 <!--    <named-query name="Employer.update">-->
 <!--        <query>update Employer set firstName=?1 ,lastName=?2 ,number=?3 ,password=?4 ,username=?5 where id=?6</query>-->
 <!--    </named-query>-->

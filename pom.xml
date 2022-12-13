@@ -51,24 +51,24 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.6</version>
+            <version>8.0.30</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>1.5.2.Final</version>
+            <version>1.5.3.Final</version>
         </dependency>
 
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
-            <version>1.6.7</version>
+            <version>1.6.8</version>
         </dependency>
 
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
-            <version>1.6.10</version>
+            <version>1.6.13</version>
         </dependency>
 
 
@@ -77,6 +77,11 @@
             <artifactId>hibernate-validator</artifactId>
             <version>8.0.0.Final</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.fasterxml.jackson.dataformat</groupId>-->
+<!--            <artifactId>jackson-dataformat-xml</artifactId>-->
+<!--        </dependency>-->
 
     </dependencies>
 

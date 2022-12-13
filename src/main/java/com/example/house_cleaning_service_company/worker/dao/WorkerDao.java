@@ -17,9 +17,11 @@ public interface WorkerDao extends JpaRepository<Worker,Long> {
     @Query
     WorkerModel update(String firstName, String lastName, String number, String password, String photo ,Long id);
 
+
     @Modifying
     @Query
     void deleteAndUpdate(IsActive isActive,Long id);
+
 
     //todo this way is not true must make pagination
     @Query
