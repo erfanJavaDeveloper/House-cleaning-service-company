@@ -14,7 +14,6 @@ import lombok.*;
 public class Employer {
 
 //    private Long id;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
